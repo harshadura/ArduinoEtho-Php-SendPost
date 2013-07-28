@@ -18,12 +18,12 @@
     delay(1000);
     Serial.println("connecting...");
 
-    if (client.connect("192.168.0.1",8099))
+    if (client.connect("192.168.0.1",82))
     {                                 
     Serial.println("Sending to Server: ");                    
     client.println("POST /ArduinoEtho/arduino.php HTTP/1.1");           
     Serial.print("POST /ArduinoEtho/arduino.php HTTP/1.1");           
-    client.println("Host: 192.168.0.55");
+    client.println("Host: 192.168.0.1");
     client.println("Content-Type: application/x-www-form-urlencoded");
     client.println("Connection: close");
     client.println("User-Agent: Arduino/1.0");
